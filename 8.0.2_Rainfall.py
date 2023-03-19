@@ -1,8 +1,9 @@
 data = open('rainfall-totals.txt','r')
-data = data.readlines()
+Data = data.readlines()
+data.close()
 total = 0
 count = 0
-for i in data:
+for i in Data:
     i = i.strip("/n")
     I = i.split(" ")
     try:
